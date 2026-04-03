@@ -5,21 +5,21 @@
 class Conga < Formula
   desc "Conga Line — manage your OpenClaw deployment"
   homepage "https://github.com/cruxdigital-llc/conga-line"
-  version "0.0.24"
+  version "0.0.25"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/cruxdigital-llc/CongaLine/releases/download/v0.0.24/conga_darwin_amd64.tar.gz"
-      sha256 "66391e2c349ec01474a91df52ecc1c7a9149b12eeef2a44682be89ca20d1a75f"
+      url "https://github.com/cruxdigital-llc/CongaLine/releases/download/v0.0.25/conga_darwin_amd64.tar.gz"
+      sha256 "8c556258589d03ab7c635e20e2f2a3804301fe3e87b518ec7f28c9d08e62a46b"
 
       define_method(:install) do
         bin.install "conga"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/cruxdigital-llc/CongaLine/releases/download/v0.0.24/conga_darwin_arm64.tar.gz"
-      sha256 "9661a5a7868ff3e5e0817d7d6deb7b553aeabe60b6bc12b659b9dec6eb3944fa"
+      url "https://github.com/cruxdigital-llc/CongaLine/releases/download/v0.0.25/conga_darwin_arm64.tar.gz"
+      sha256 "6d9226590e6e9a6cbb629c71075009fafa32d85159ed6ff5394b1aaf52c8ddbc"
 
       define_method(:install) do
         bin.install "conga"
@@ -29,15 +29,15 @@ class Conga < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/cruxdigital-llc/CongaLine/releases/download/v0.0.24/conga_linux_amd64.tar.gz"
-      sha256 "160c6397b32851764dfa9d1054d9061a3a471bc74af7e483a4cfb307bbb50bba"
+      url "https://github.com/cruxdigital-llc/CongaLine/releases/download/v0.0.25/conga_linux_amd64.tar.gz"
+      sha256 "8f215a873028ad24cbcb3ac331083e448844ff7687786d690f2bcbb5b3709bce"
       define_method(:install) do
         bin.install "conga"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/cruxdigital-llc/CongaLine/releases/download/v0.0.24/conga_linux_arm64.tar.gz"
-      sha256 "53ac4ce996ca7ebc6142193bce1b1f4b4cd27f014b4fa90f11b3ad8ac75d8214"
+      url "https://github.com/cruxdigital-llc/CongaLine/releases/download/v0.0.25/conga_linux_arm64.tar.gz"
+      sha256 "067b6feca0de2d2ab1bb0878a5187f348d9838d286ac0c0ed1381ee9d8dab483"
       define_method(:install) do
         bin.install "conga"
       end
